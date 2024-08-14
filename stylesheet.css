@@ -1,0 +1,130 @@
+@import "./resources/modern-normalize.css";
+
+body {
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: stretch;
+    background-color: #07171f;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    background-color: rgb(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+    color: #cbdbfc;
+}
+
+h1 {
+    margin: 0.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 20vw));
+    gap: 3rem;
+}
+
+.card {
+    color: #cbdbfc;
+    font-size: 1rem;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    border: solid #cbdbfc 2px;
+    padding: 1.25em;
+    background-color: greenyellow;
+    margin: 1rem;
+    background-color: #2e879e;
+    order: 0;
+    border-radius: 12px;
+}
+
+.card-btns {
+    display: flex;
+    margin-top: 2em;
+    justify-content: space-evenly;
+}
+
+.card-btns img {
+    width: 1.5em;
+    height: auto;
+}
+
+.card-btns button {
+    padding: 6px;
+}
+
+.read {
+    background: #a68058;
+}
+
+.delete {
+    background: #9c3513;
+}
+
+.add {
+    order: 1;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.add-btn {
+    background-color: transparent;
+    border-color: #2c678d;
+}
+
+form {
+    display: flex;
+    flex-flow: nowrap column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+h2 {
+    margin-bottom: 1.1rem;
+}
+
+.form-btns {
+    display: flex;
+    align-self: stretch;
+    justify-content: space-evenly;
+}
+
+.submit {
+    background-color: #2e879e;
+    color: #cbdbfc;
+}
+
+.cancel {
+    background-color: #df7126;
+    color: #cbdbfc;
+}
+
+.submit,
+.cancel {
+    width: 6em;
+    padding: 8px;
+}
+
+button {
+    border-radius: 12px;
+}
+
+input {
+    height: 2em;
+}
+
+dialog {
+    border-radius: 8px;
+}
